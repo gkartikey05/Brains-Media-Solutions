@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Menu Bar */
+.menu-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.menu-bar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-bar ul li {
+    margin: 0 10px;
+}
+
+.menu-bar ul li a {
+    color: #fff;
+}
+
+/* Slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.slide-content {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.prev, .next {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #555;
+}
+
+/* Services */
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1 0 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.service i {
+    font-size: 40px;
+    color: #333;
+}
+
+.service h3 {
+    margin: 10px 0;
+}
+
+/* About Us */
+#about-us {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+}
+
+/* Mission */
+#mission {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+}
+
+#mission i {
+    font-size: 40px;
+    color: #333;
+}/* Vision */
+#vision {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+}
+
+#vision i {
+    font-size: 40px;
+    color: #333;
+}
+
+/* Footer */
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 0 300px;
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-bar ul {
+        flex-direction: column;
+    }
+
+    .menu-bar ul li {
+        margin: 10px 0;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+
+    .service {
+        margin: 20px 0;
+    }
+}
